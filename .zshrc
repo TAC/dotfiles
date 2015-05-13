@@ -7,6 +7,7 @@ export LSCOLORS=ExFxCxdxBxegedabagacad
 export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 export LESS='-gj10 --no-init --quit-if-one-screen --RAW-CONTROL-CHARS'
 export LESSOPEN='| $HOME/bin/src-hilite-lesspipe.sh %s'
+export GREP_OPTIONS="--binary-files=without-match --with-filename --line-number --color=always"
 
 #ターミナル操作
 autoload -U compinit && compinit #自動補完の有効化
@@ -71,4 +72,3 @@ source '/usr/home/iida/google-cloud-sdk/path.zsh.inc'
 
 # The next line enables bash completion for gcloud.
 source '/usr/home/iida/google-cloud-sdk/completion.zsh.inc'
-
